@@ -9,7 +9,7 @@ The full package includes the following parts:
 
 - Core mega menu:
   - *UbMegaMenu*
-  - *MegaMenuGraphQl* (helps to handle declarative retrieval of menu data from GraphQL queries right within a single back-end of UB Mega Menu module)
+  - *MegaMenuGraphQl* (helps to handle declarative retrieval of menu data from GraphQL API right within a single back-end of UB Mega Menu module)
 - *UBMegaMenu-PWA* (the source code for PWA mega menu’s storefront)
 
 # How to try PWA Mega Menu without purchasing the module? 
