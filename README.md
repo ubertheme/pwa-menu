@@ -1,4 +1,33 @@
 
+This repo provides the source code files for PWA mega menu's storefront which helps you get familar with Magento PWA Studio. 
+
+# Overview
+
+PWA Mega Menu is an add-on that add the new mega menu functionality to the [UB Mega Menu](https://www.ubertheme.com/magento-extensions-2-x/ub-mega-menu/) - the paid version that allows you to set up mega menu on top of Magento PWA Studio project. 
+
+The full package includes the following parts:
+
+- Core mega menu:
+  - *UbMegaMenu*
+  - *MegaMenuGraphQl* (helps to handle declarative retrieval of menu data from GraphQL queries right within a single back-end of UB Mega Menu module)
+- *UBMegaMenu-PWA* (the source code for PWA mega menu’s storefront)
+
+# How to try PWA Mega Menu without purchasing the module? 
+
+You simply pull the source code of PWA Mega Menu storefront (which is free) from this repo and follow the instruction below. Once done, you should have a Magento PWA Studio instance with UB PWA Mega Menu like the following screenshot: 
+
+![PWA Mega Menu demo](https://static.ubertheme.com/blog/2020/2/pwa_megamenu_installation/pwa_megamenu.png) 
+
+(All the sample content and UB Mega Menu's backend configuration are retrieved from our existing [UB Mega Menu demo](https://www.ubertheme.com/magento-news/how-to-install-pwa-mega-menu-storefront-on-magento-pwa-studio/?utm_source=m2_tutorial&utm_medium=github&utm_campaign=pwa_menu_setup))
+
+# Prerequisites
+
+Make sure you have the following:
+* NodeJS >= 10.14.1 LTS (NodeJS 11+ can cause problems)
+* Yarn >= 1.13.0
+* Python 2.7 and build tools, see the Installation instructions on node-gyp for your platform.
+* unix based OS for example MacOS or Linux
+
 # Steps to deploy PWA Menu project in Magento PWA Studio
 
 ### Step 1: Pull the code from Magento Studio PWA git repository.
@@ -63,5 +92,11 @@ yarn pwa-menu watch
 yarn pwa-menu start
 ```
 
+Once done, your storefront should now show the newly installed PWA Mega Menu!
 
+# Useful links
+
+* [Tutorial] [How to create a custom PWA project](https://www.ubertheme.com/magento-news/how-to-create-custom-pwa-project-on-top-magento-pwa-studio/?utm_source=m2_tutorial&utm_medium=github&utm_campaign=magento_pwa_setup) on top of Magento PWA Studio﻿
+* Live demo and features of [UB Mega Menu for Magento PWA Studio](https://www.ubertheme.com/magento-news/magento-pwa-mega-menu/?utm_source=m2_tutorial&utm_medium=github&utm_campaign=magento_pwa_menu)
+* Have a question, reach us via info (at) ubertheme.com
 
