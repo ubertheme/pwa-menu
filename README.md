@@ -18,7 +18,7 @@ You simply pull the source code of PWA Mega Menu storefront (which is free) from
 
 ![PWA Mega Menu demo](https://static.ubertheme.com/blog/2020/2/pwa_megamenu_installation/pwa_megamenu.png) 
 
-(All the sample content and UB Mega Menu's backend configuration are retrieved from our existing [UB Mega Menu demo](https://www.ubertheme.com/magento-news/how-to-install-pwa-mega-menu-storefront-on-magento-pwa-studio/?utm_source=m2_tutorial&utm_medium=github&utm_campaign=pwa_menu_setup))
+(All the sample content and UB Mega Menu's backend configuration are retrieved from our existing [UB Mega Menu demo](https://www.ubertheme.com/magento-news/magento-pwa-mega-menu/?utm_source=m2_tutorial&utm_medium=github&utm_campaign=magento_pwa_menu))
 
 # Prerequisites
 
