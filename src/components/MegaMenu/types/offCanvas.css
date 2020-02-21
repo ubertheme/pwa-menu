@@ -1,0 +1,33 @@
+/*
+    Table Content
+    1. @Root
+*/
+/* @Root */
+.root {
+    composes: root from '../megaMenu.css';
+    background: inherit;
+    padding: 0.625rem 1.25rem 0.625rem 1.375rem;
+    box-shadow: none;
+}
+
+/* @Error Message. */
+.root .fetch_error {
+    background-color: rgb(var(--base-warning-color));
+    color: #6f4400;
+    font-size: 1rem;
+    font-weight: var(--base-weight-medium);
+    line-height: 1.5625rem;
+    padding: 0.5rem 2rem;
+    white-space: pre-wrap;
+}
+
+.root .fetch_error pre {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 767px) {
+    .root {
+        border-bottom: 0;
+    }
+}

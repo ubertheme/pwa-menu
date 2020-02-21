@@ -1,0 +1,49 @@
+/*
+    Table Content
+    1. @Error Message
+    2. @Global style
+    3. @Level1
+*/
+
+/* @Error Message. */
+.root .fetch_error {
+    background-color: rgb(var(--base-warning-color));
+    color: #6f4400;
+    font-size: 1rem;
+    font-weight: var(--base-weight-medium);
+    line-height: 1.5625rem;
+    padding: 0.5rem 2rem;
+}
+
+.root .fetch_error pre {
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    /* @Global style */
+    .root {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .root {
+        composes: root from '../megaMenu.css';
+        visibility: visible;
+        opacity: 1;
+        box-shadow: 0 1px rgba(var(--base-black-color), 0.05);
+    }
+
+    /* @Level1 */
+    .root .level1 {
+        font-size: 0;
+        margin: auto;
+        max-width: 1170px;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+}

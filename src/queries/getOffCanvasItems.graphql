@@ -1,0 +1,30 @@
+# TODO: get only active menu items from graphql when it is ready
+query menuOffCanvasItems($menuKey: String!, $parentId: Int) {
+    menuItems(menuKey: $menuKey, parentId: $parentId) {
+        menu_title
+        items { # parent level
+            id
+            parent
+            title
+            show_title
+            link
+            link_type
+            is_group
+            level
+            path
+            additional_class
+            mega_setting {
+                rich_content
+                description
+                visibility
+            }
+            childs { # child level
+                id
+            }
+        }
+        back_item {
+            id
+            title
+        }
+    }
+}

@@ -1,0 +1,383 @@
+/*
+    Table Content
+    1. @Items
+    2. @Link
+    3. @Title
+    4. @Desc
+    5. @Rich Content
+    6. @Level2
+    7. @Level3
+    8. @Level4
+    9. @Level5
+*/
+
+@media screen and (min-width: 768px) {
+    /* @Items */
+    .root {
+        display: inline-block;
+        font-size: var(--base-font-size);
+        line-height: 3.125rem;
+        position: relative;
+    }
+
+    .root.dynamic_width {
+        position: static;
+    }
+
+    .root.fixed_width {
+        position: relative;
+    }
+
+    /* @Link */
+    .root.has_childs > a {
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        position: relative;
+        z-index: 2;
+    }
+
+    .root.has_childs:hover > a {
+        background-color: rgb(var(--base-white-color));
+        border-color: #eee;
+    }
+
+    .root .link {
+        color: rgba(var(--base-black-color) 0.87);
+        display: block;
+        font-weight: 500;
+        padding: 0 1.25rem;
+        text-decoration: none;
+    }
+
+    .root .link.active {
+        background-color: inherit;
+        color: rgb(var(--base-active-color));
+    }
+
+    .root .link:hover {
+        background-color: inherit;
+        color: rgb(var(--base-active-color));
+        outline: none;
+        text-decoration: none;
+    }
+
+    .root:hover .link {
+        color: rgb(var(--base-active-color));
+    }
+
+    .root.all-items {
+        margin-top: 0.625rem;
+        text-transform: uppercase;
+    }
+
+    .root.all-items .link {
+        font-weight: var(--base-weight-medium);
+        text-transform: none;
+    }
+
+    .root.all-items .link span {
+        border-bottom: 0.0625rem solid #ddd;
+        display: inline !important;
+        font-style: italic;
+        padding-bottom: 0.125rem;
+        padding-right: 0;
+    }
+
+    /* @Title */
+    .root.has_childs span {
+        padding-right: 1.5625rem;
+        position: relative;
+    }
+
+    .root.has_childs span svg {
+        position: absolute;
+        right: 0;
+        top: 0.125rem;
+    }
+
+    .root.has_childs .link.active:hover {
+        background-color: inherit;
+        color: rgb(var(--base-active-color));
+    }
+
+    /* @Desc */
+    .root .item_desc {
+        line-height: 1;
+        padding: 0 1.25rem;
+        padding-bottom: 1rem;
+    }
+
+    .root .item_desc img {
+        width: 100%;
+    }
+
+    /* @richContent */
+    .root .item_rich_content {
+        line-height: 1.5625rem;
+    }
+
+    .root .item_rich_content p {
+        margin-bottom: 1rem;
+    }
+
+    .root .item_rich_content h3 {
+        margin-bottom: 1rem;
+    }
+
+    .root .item_rich_content img {
+        padding: 2rem 1rem 0;
+        width: 100%;
+    }
+
+    /* @Level2 */
+    .root > .level2 {
+        background-color: rgba(var(--base-white-color));
+        border: 1px solid #eee;
+        font-size: 0;
+        left: 0px;
+        min-width: 13.75rem;
+        padding: 1rem;
+        position: absolute;
+        text-align: left;
+        top: 3.0625rem;
+        visibility: hidden;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: var(--base-transition);
+    }
+
+    .root:hover > .level2 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .root .column {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .column1 {
+    }
+
+    .column2 {
+    }
+
+    .column3 {
+    }
+
+    .column4 {
+    }
+
+    .root > .level2 .root {
+        display: block;
+        line-height: 2.25rem;
+        width: 100%;
+    }
+
+    .root > .level2 .root a {
+        font-weight: var(--base-weight-general);
+        padding: 0;
+    }
+
+    .root > .level2 .root.has_childs a {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .root:hover .level2 .root a {
+        color: rgba(var(--base-black-color) 0.87);
+    }
+
+    .root:hover .level2 .root:hover a,
+    .root:hover .level2 .root a:hover {
+        color: rgb(var(--base-active-color));
+    }
+
+    .root > .level2 .root span {
+        display: block;
+        width: 100%;
+    }
+
+    .root > .level2 .has_childs span svg {
+        top: 0.75rem;
+    }
+
+    /* @single */
+    .root:not(.columns) > .level2 .root {
+        display: block;
+    }
+
+    .root:not(.columns) > .level2 .root a {
+        color: rgba(var(--base-black-color) 0.87);
+        padding: 0;
+    }
+
+    .root:not(.columns) > .level2 .root a:hover {
+        color: rgb(var(--base-active-color));
+    }
+
+    .root.group {
+        display: inline-block !important;
+    }
+
+    .root.group > a {
+        font-weight: var(--base-weight-medium) !important;
+        padding: 0 !important;
+        text-transform: uppercase !important;
+    }
+
+    .root.group > a svg {
+        display: none !important;
+    }
+
+    /* @Level3 */
+    .root > .level3 {
+        background-color: rgba(var(--base-white-color));
+        font-size: 0;
+        left: 100%;
+        position: absolute;
+        text-align: left;
+        top: 0;
+        visibility: hidden;
+        width: 13.75rem;
+        z-index: 1;
+        opacity: 0;
+        transition: var(--base-transition);
+    }
+
+    .root:hover > .level3 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .root:hover .level2 .level3 .root a {
+        color: rgba(var(--base-black-color) 0.87);
+        font-weight: var(--base-weight-general);
+        text-transform: none;
+    }
+
+    .root:hover .level2 .level3 .root:hover a,
+    .root:hover .level2 .level3 .root a:hover {
+        color: rgb(var(--base-active-color));
+    }
+
+    /* @single*/
+    .root:not(.columns) > .level3 {
+        border: 1px solid #eee;
+        padding: 1rem;
+    }
+
+    /* @groups */
+    .root.group > .level3 {
+        border: 0;
+        padding: 0;
+        position: static;
+        width: 100%;
+    }
+
+    .root.group > .level3 .root {
+        line-height: 1.875rem;
+    }
+
+    .columns:hover .root.group > .level3 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* @Level4 */
+    .root > .level4 {
+        background-color: rgba(var(--base-white-color));
+        font-size: 0;
+        left: 100%;
+        position: absolute;
+        text-align: left;
+        top: 0;
+        visibility: hidden;
+        width: 13.75rem;
+        z-index: 1;
+        opacity: 0;
+        transition: var(--base-transition);
+    }
+
+    .root:hover > .level4 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .root:hover .level2 .level3 .level4 .root a {
+        color: rgba(var(--base-black-color) 0.87);
+    }
+
+    .root:hover .level2 .level3 .level4 .root:hover a,
+    .root:hover .level2 .level3 .level4 .root a:hover {
+        color: rgb(var(--base-active-color));
+    }
+
+    /* @single */
+    .root:not(.columns) > .level4 {
+        border: 1px solid #eee;
+        padding: 1rem;
+    }
+
+    /* @groups */
+    .root.group > .level4 {
+        border: 0;
+        padding: 0;
+        position: static;
+        width: 100%;
+    }
+
+    .columns:hover .root.group > .level4 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* @Level5 */
+    .root > .level5 {
+        background-color: rgba(var(--base-white-color));
+        font-size: 0;
+        left: 100%;
+        position: absolute;
+        text-align: left;
+        top: 0;
+        visibility: hidden;
+        width: 13.75rem;
+        z-index: 1;
+        opacity: 0;
+        transition: var(--base-transition);
+    }
+
+    .root:hover > .level5 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .root:hover .level2 .level3 .level4 .level5 .root a {
+        color: rgba(var(--base-black-color) 0.87);
+    }
+
+    .root:hover .level2 .level3 .level4 .level5 .root:hover a,
+    .root:hover .level2 .level3 .level4 .level5 .root a:hover {
+        color: rgb(var(--base-active-color));
+    }
+
+    /* @single */
+    .root:not(.columns) > .level5 {
+        border: 1px solid #eee;
+        padding: 1rem;
+    }
+
+    /* @groups */
+    .root.group > .level5 {
+        border: 0;
+        padding: 0;
+        position: static;
+        width: 100%;
+    }
+
+    .columns:hover .root.group > .level5 {
+        visibility: visible;
+        opacity: 1;
+    }
+}

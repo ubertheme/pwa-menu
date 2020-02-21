@@ -1,0 +1,73 @@
+# TODO: get only active menu items from graphql when it is ready
+query menuItemsList($menuKey: String!, $parentId: Int) {
+    menuItems(menuKey: $menuKey, parentId: $parentId) {
+        items { # items level 1
+            id
+            title
+            show_title
+            link
+            link_type
+            is_group
+            level
+            path
+            additional_class
+            mega_setting {
+                column_number
+                column_x_width
+                column_width_type
+                column_default_width
+                column_wrapper_width
+                visibility
+            }
+            childs { # items level 2
+                id
+                title
+                show_title
+                link
+                link_type
+                is_group
+                level
+                path
+                additional_class
+                mega_setting {
+                    column_number
+                    rich_content
+                    description
+                    visibility
+                }
+                childs { # items level 3
+                    id
+                    title
+                    show_title
+                    link
+                    link_type
+                    is_group
+                    level
+                    path
+                    additional_class
+                    childs { # items level 4
+                        id
+                        title
+                        show_title
+                        link
+                        link_type
+                        is_group
+                        level
+                        path
+                        additional_class
+                        childs { # items level 5
+                            id
+                            title
+                            show_title
+                            link
+                            link_type
+                            is_group
+                            level
+                            path
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

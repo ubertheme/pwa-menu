@@ -1,0 +1,93 @@
+.root {
+    border-bottom: 1px solid rgba(var(--base-black-color), 0.05);
+    display: inline-block;
+    font-weight: var(--base-weight-medium);
+    margin: 0;
+    min-height: 3.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.root .target {
+    color: var(--base-black-color);
+    display: inline;
+    font-family: inherit;
+    font-weight: var(--base-weight-medium);
+    margin: 0;
+    min-height: 3.5rem;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    flex: auto;
+    justify-content: flex-start;
+}
+
+.root .target:hover,
+.root .target:focus {
+    background-color: inherit;
+    color: rgb(var(--base-active-color));
+    outline: none;
+    text-decoration: none;
+}
+
+.root .label {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.root .item_desc {
+    line-height: 1;
+    padding: 0 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.root .item_desc img {
+    width: 100%;
+}
+
+.root .item_rich_content {
+    line-height: 1.5625rem;
+    margin: 0 -0.5rem;
+    padding: 0 0 0.625rem;
+}
+
+.root .item_rich_content img {
+    width: 100%;
+}
+
+.root.view_all {
+}
+
+.root.view_all a {
+    display: inline;
+    font-style: italic;
+    line-height: 3.5rem;
+    min-height: 3.5rem;
+    width: 100%;
+}
+
+.root.view_all a span {
+    border-bottom: 1px solid rgba(var(--base-black-color), 0.05);
+    font-weight: var(--base-weight-general);
+    padding-bottom: 0.125rem;
+}
+
+/*@Link*/
+.root .link {
+    display: block;
+    height: 100%;
+    line-height: 3.5rem;
+    min-height: 3.5rem;
+    width: 100%;
+}
+.root .active {
+}
+
+@media screen and (max-width: 767px) {
+    :global(.panties-photo) img,
+    :global(.lingerie-photo) img {
+        width: 100%;
+    }
+}

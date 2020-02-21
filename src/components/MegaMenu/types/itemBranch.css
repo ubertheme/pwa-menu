@@ -1,0 +1,51 @@
+.root {
+    composes: root from './itemLeaf.css';
+}
+
+.root .target {
+    color: var(--base-black-color);
+    display: inline;
+    font-family: inherit;
+    font-weight: var(--base-weight-medium);
+    margin: 0;
+    min-height: 3.5rem;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    flex: auto;
+    justify-content: flex-start;
+}
+
+.root .target svg {
+    float: right;
+    margin-top: 4px;
+}
+
+.root.group {
+}
+
+.root .label {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.root .item_desc {
+}
+
+.root .item_desc img {
+    width: 100%;
+}
+
+.root .item_rich_content {
+    margin: 0 -0.5rem;
+}
+
+.root .item_rich_content img {
+    width: 100%;
+}
+
+.root :global(.panties-photo) {
+    padding: 0 0 15px;
+}

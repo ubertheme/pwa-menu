@@ -1,0 +1,63 @@
+[
+    {
+        "id": 10,
+        "type": "CMS",
+        "title": "Home",
+        "url_key": "home"
+    },
+    {
+        "id": 20,
+        "type": "CMS",
+        "title": "About Us",
+        "url_key": "about-us"
+    },
+    {
+        "id": 30,
+        "type": "CMS",
+        "title": "Enable Cookies",
+        "url_key": "enable-cookies"
+    },
+    {
+        "id": 40,
+        "type": "CATEGORY",
+        "title": "Dress",
+        "url_key": "venia-dresses",
+        "children": [
+            {
+                "id": 5,
+                "type": "CATEGORY",
+                "title": "Accessories",
+                "url_key": "venia-accessories",
+                "children": [
+                    {
+                        "id": 6,
+                        "type": "CATEGORY",
+                        "title": "Shop the look",
+                        "url_key": "shop-the-look",
+                        "url": "/"
+                    },
+                    {
+                        "id": 7,
+                        "type": "PRODUCT",
+                        "title": "Athena Tank Dress",
+                        "url_key": "athena-tank-dress"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "type": "CATEGORY",
+        "title": "Bottoms",
+        "url_key": "venia-bottoms",
+        "children": []
+    },
+    {
+        "id": 60,
+        "type": "CATEGORY",
+        "title": "Tops",
+        "url_key": "venia-tops",
+        "children": []
+    }
+]
