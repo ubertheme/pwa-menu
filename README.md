@@ -42,7 +42,7 @@ cd pwa-studio
 ```
 Pull the specific a branch, for example we will pull the 'v5.0.0' branch:
 ```
-git clone -b v5.0.0 --single-branch https://github.com/ubertheme/pwa-menu
+git clone -b v5.0.0 --single-branch https://github.com/ubertheme/pwa-menu packages/pwa-menu
 ```
 ### Step 3: Setting, build and run the UB PWA Menu project.
 
